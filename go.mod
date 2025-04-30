@@ -1,4 +1,4 @@
-module github.com/a-romash/protos
+module github.com/neandrson/protos
 
 go 1.22.1
 
