@@ -240,6 +240,7 @@ type ResultOfExpression struct {
 
 	IdExpression string  `protobuf:"bytes,1,opt,name=id_expression,json=idExpression,proto3" json:"id_expression,omitempty"` //Id of expression
 	Result       float32 `protobuf:"fixed32,2,opt,name=result,proto3" json:"result,omitempty"`
+	IdAgent      int32   `protobuf:"varint,3,opt,name=id_agent,json=idAgent,proto3" json:"id_agent,omitempty"`
 }
 
 func (x *ResultOfExpression) Reset() {
