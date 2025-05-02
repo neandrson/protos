@@ -1,6 +1,6 @@
 module github.com/neandrson/protos
 
-go 1.23.1
+go 1.22.1
 
 require (
 	google.golang.org/grpc v1.63.2
