@@ -16,6 +16,8 @@ service Orchestrator {
     rpc GiveResultOfExpression (ResultOfExpression) returns (google.protobuf.Empty);
     // Registers new agent and returns of his id
     rpc RegisterNewAgent (google.protobuf.Empty) returns (IdAgent);
+    // Deletes agent from database
+    rpc RemoveAgent (IdAgent) returns (google.protobuf.Empty);
 }
 
 message IsAlive {
@@ -40,4 +42,5 @@ message RPNToken {
 message ResultOfExpression {
     string id_expression = 1; //Id of expression
     float result = 2;
+    int32 id_agent = 3;
 }
